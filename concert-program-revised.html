@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunaadaalaya Annual Day 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --gold-pale: #f5e8c0;
+    --deep: #1a0f00;
+    --warm: #2d1a00;
+    --cream: #fdf6e8;
+    --text: #3a2200;
+    --muted: #7a5c30;
+    --border: #d4a843;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+  }
+
+  /* Decorative SVG border top */
+  .top-border {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(90deg, var(--deep), var(--gold), var(--deep));
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 44px 20px 32px;
+    position: relative;
+  }
+
+  .header::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 28px auto 0;
+  }
+
+  .ornament {
+    font-size: 28px;
+    color: var(--gold);
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .concert-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(22px, 5vw, 36px);
+    font-weight: 600;
+    color: var(--deep);
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .concert-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(15px, 3vw, 20px);
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    justify-content: center;
+    background: var(--warm);
+    color: var(--gold-pale);
+    padding: 14px 24px;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .legend span { display: flex; align-items: center; gap: 6px; }
+  .legend-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  /* Item cards */
+  .item {
+    border: 1px solid #e5d5aa;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    animation: fadeUp 0.4s both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .item:nth-child(1) { animation-delay: 0.05s; }
+  .item:nth-child(2) { animation-delay: 0.10s; }
+  .item:nth-child(3) { animation-delay: 0.15s; }
+  .item:nth-child(4) { animation-delay: 0.20s; }
+  .item:nth-child(5) { animation-delay: 0.25s; }
+  .item:nth-child(6) { animation-delay: 0.30s; }
+  .item:nth-child(7) { animation-delay: 0.35s; }
+  .item:nth-child(8) { animation-delay: 0.40s; }
+  .item:nth-child(9) { animation-delay: 0.45s; }
+  .item:nth-child(10){ animation-delay: 0.50s; }
+
+  .item-header {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .item-num {
+    background: var(--warm);
+    color: var(--gold-light);
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+    flex-shrink: 0;
+  }
+
+  .item-main {
+    padding: 12px 16px;
+    border-left: 3px solid var(--gold);
+  }
+
+  .song-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(17px, 3vw, 21px);
+    font-weight: 600;
+    color: var(--deep);
+    line-height: 1.2;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin-top: 5px;
+  }
+
+  .meta-pill {
+    font-size: 10.5px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .meta-pill strong {
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .composer-tag {
+    display: inline-block;
+    font-size: 10px;
+    background: var(--gold-pale);
+    color: var(--warm);
+    border: 1px solid #dfc882;
+    border-radius: 20px;
+    padding: 2px 10px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .item-footer {
+    background: #faf6ed;
+    border-top: 1px solid #eee0bb;
+    padding: 8px 16px 8px 52px;
+  }
+
+  .participants-label {
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .participants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .participant {
+    font-size: 11.5px;
+    color: var(--text);
+    background: white;
+    border: 1px solid #e0cfa0;
+    border-radius: 3px;
+    padding: 2px 9px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .mridangam-row {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mridangam-label {
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--gold);
+  }
+  .mridangam-name {
+    font-size: 11.5px;
+    color: var(--warm);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+  }
+
+  /* Divider ornament */
+  .section-divider {
+    text-align: center;
+    margin: 28px 0 24px;
+    color: var(--gold);
+    font-size: 18px;
+    letter-spacing: 16px;
+    opacity: 0.7;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5d5aa;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13px;
+  }
+
+  /* Kolam-inspired top decoration */
+  .kolam {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 8px;
+    color: var(--gold);
+    margin-bottom: 6px;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-border"></div>
+
+<div class="page">
+
+  <div class="header">
+    <div class="kolam">✦ ✦ ✦</div>
+    <div class="concert-title">Sunaadaalaya<br>Annual Day 2026</div>
+    <div class="concert-subtitle">A celebration of classical Indian music</div>
+  </div>
+
+
+
+  <div id="program"></div>
+
+  <div class="footer">
+    Sruti — Laya — Bhava &nbsp;|&nbsp; श्रुति — लय — भाव
+  </div>
+
+</div>
+
+<script>
+const items = [
+  { num: 1,  song: "Mooshika Vahana",    ragam: "Mayamalavagowla",    talam: "Adi",          composer: "",                           participants: ["Mahima Senthil"],                                                                                                 mridangam: "" },
+  { num: 2,  song: "Sarali Varsaigal",   ragam: "Mayamalavagowla",    talam: "Adi",          composer: "Purandara Dasa",             participants: ["Krishanth Jasty","Krithik Satish","Rudransh Cheruvu","Swara Burra"],                                            mridangam: "" },
+  { num: 3,  song: "Gananatha",          ragam: "Mayamalavagowla",    talam: "Rupakam",      composer: "Periyasami Thooran",         participants: ["Aaryash Palaparthi","Bhavana Duddugunta","Mathangi Balakrishnan","Pranav Mohan","Sidhant Kannambadi","Tamil Selvi Viswanathan"], mridangam: "Madhavan Mukunthraj" },
+  { num: 4,  song: "Kundagowra",         ragam: "Malahari",           talam: "Rupakam",      composer: "Purandara Dasa",             participants: ["Aaryash Palaparthi","Pranav Mohan","Sidhant Kannambadi"],                                                        mridangam: "Madhavan Mukunthraj" },
+  { num: 5,  song: "Sri Gananatha",      ragam: "Malahari",           talam: "Rupakam",      composer: "Purandara Dasa",             participants: ["Aashna Krishnan","Aarya Sarma","Sadhana Babu","Sangeetha Karanam","Vihaan Kaushik"],                             mridangam: "Madhavan Mukunthraj" },
+  { num: 6,  song: "Keraya Neeranu",     ragam: "Malahari",           talam: "Tisra Triputa",composer: "Purandara Dasa",             participants: ["Aashna Krishnan","Aarya Sarma","Sadhana Babu","Sangeetha Karanam","Vihaan Kaushik"],                             mridangam: "Madhavan Mukunthraj" },
+  { num: 7,  song: "Janaka Sutha",       ragam: "Saveri",             talam: "Rupakam",      composer: "Purandara Dasa",             participants: ["Aaryan","Hariharan Anandbabu","Sangeetha Karanam","Senthil Ramanujam"],                                          mridangam: "Madhavan Mukunthraj" },
+  { num: 8,  song: "Kamalajadala",       ragam: "Kalyani",            talam: "Tisra Triputa",composer: "Purandara Dasa",             participants: ["Aaryan","Hariharan Anandbabu","Sangeetha Karanam","Senthil Ramanujam"],                                          mridangam: "Madhavan Mukunthraj" },
+  { num: 9,  song: "Raravenu",           ragam: "Bilahari",           talam: "Adi",          composer: "Patnam Subramania Iyer",     participants: ["Aadarsh Venkatramanan","Anjana Mureli","Avyukth Melatur","Jaana Iyer","Mythili Sankar"],                         mridangam: "Madhavan Mukunthraj" },
+  { num: 10, song: "Jathiswaram",        ragam: "Simhendramadhyamam", talam: "Adi",          composer: "",                           participants: ["Aadarsh Venkatramanan","Anjana Mureli","Avyukth Melatur","Jaana Iyer","Mythili Sankar"],                         mridangam: "Madhavan Mukunthraj" },
+  { num: 11, song: "Jalajakshi",         ragam: "Hamsadhwani",        talam: "Adi",          composer: "Maanambuchaavadi Venkatasubbaiyer", participants: ["Jayender Jagadeesan"],                                                                                   mridangam: "" },
+  { num: 12, song: "Evari Bodhana",      ragam: "Abogi",              talam: "Adi",          composer: "Patnam Subramania Iyer",     participants: ["Aadarsh Venkatramanan","Anjana Mureli","Avyukth Melatur","Jaana Iyer","Mythili Sankar"],                         mridangam: "Madhavan Mukunthraj" },
+  { num: 13, song: "Vanajakshi",         ragam: "Mandari",            talam: "Adi",          composer: "Mysore Vasudevachar",        participants: ["Mahashraya Bowen","Rakshitha Rajesh","Sundararaman Rengarajan"],                                                   mridangam: "Madhavan Mukunthraj" },
+  { num: 14, song: "Parithana Mechite",  ragam: "Bilahari",           talam: "Khanda Chapu", composer: "Patnam Subramania Iyer",     participants: ["Mahashraya Bowen","Rakshitha Rajesh","Sundararaman Rengarajan"],                                                   mridangam: "Madhavan Mukunthraj" },
+];
+
+const container = document.getElementById('program');
+
+items.forEach(item => {
+  const div = document.createElement('div');
+  div.className = 'item';
+
+  const participantsHTML = item.participants.map(p =>
+    `<span class="participant">${p}</span>`
+  ).join('');
+
+  const mridangamHTML = item.mridangam
+    ? `<div class="mridangam-row">
+        <span class="mridangam-label">Mridangam</span>
+        <span class="mridangam-name">${item.mridangam}</span>
+       </div>`
+    : '';
+
+  const composerHTML = item.composer
+    ? `<span class="composer-tag">${item.composer}</span>`
+    : '';
+
+  div.innerHTML = `
+    <div class="item-header">
+      <div class="item-num">${item.num}</div>
+      <div class="item-main">
+        <div class="song-name">${item.song}</div>
+        <div class="meta-row">
+          <span class="meta-pill">Ragam &nbsp;<strong>${item.ragam}</strong></span>
+          <span class="meta-pill">Talam &nbsp;<strong>${item.talam}</strong></span>
+        </div>
+        ${composerHTML}
+      </div>
+    </div>
+    <div class="item-footer">
+      <div class="participants-label">Participants</div>
+      <div class="participants">${participantsHTML}</div>
+      ${mridangamHTML}
+    </div>
+  `;
+
+  container.appendChild(div);
+});
+</script>
+</body>
+</html>
